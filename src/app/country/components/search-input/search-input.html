@@ -1,0 +1,11 @@
+<section class="flex flex-row gap-2 mt-2">
+
+  <input type="text" class="input input-bordered mr-2 w-56" [placeholder]="placeholder()" autofocus #txtSearchCapital
+    (keyup.enter)="value.emit(txtSearchCapital.value)">
+
+  <button class="btn btn-primary" (click)="value.emit(txtSearchCapital.value)">
+    Buscar
+  </button>
+
+
+</section>
